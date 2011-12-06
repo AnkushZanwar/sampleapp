@@ -1,4 +1,5 @@
 require File.expand_path('../boot', __FILE__)
+require 'rails/all'
 
 # Pick the frameworks you want:
 require "active_record/railtie"
@@ -14,7 +15,7 @@ if defined?(Bundler)
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
 end
-
+##Bundler.require(:default, Rails.env) if defined?(Bundler)
 module Sampleapp
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
